@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco | Soares & Tricheis Advogados</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .form-contato label {
+            display: block;
+            margin-top: 15px;
+            color: #d4af37;
+            font-weight: bold;
+        }
+        .form-contato input[type="text"],
+        .form-contato input[type="email"],
+        .form-contato textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #333;
+            background-color: #1a1a1a;
+            color: #fff;
+            border-radius: 4px;
+        }
+        .form-contato button {
+            background-color: #d4af37;
+            color: #000;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .form-contato button:hover {
+            background-color: #fff;
+        }
+
+        .contato-profissionais {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+            justify-content: center;
+        }
+
+        .contato-profissional {
+            flex: 1;
+            min-width: 250px;
+            background-color: #0a0a0a;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #1a1a1a;
+            text-align: center;
+        }
+
+        .nome-profissional {
+            color: #d4af37;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .contato-item {
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+
+        .contato-item strong {
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .conteudo-pagina {
+                padding: 100px 20px !important;
+            }
+
+            .contato-profissionais {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="topo">
+        <div class="logo">
+            <img src="../logo.png" alt="Logo Soares & Tricheis Advogados">
+        </div>
+        <nav class="menu">
+            <a href="../index.html">Home</a>
+            <a href="quem-somos.html">Quem Somos</a>
+            <a href="profissionais.html">Profissionais</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="fale-conosco.html">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <section class="conteudo-pagina" style="padding: 120px 80px; min-height: 80vh; max-width: 1000px; margin: 0 auto;">
+        <h2 style="color: #d4af37; margin-bottom: 30px; border-bottom: 2px solid #333; padding-bottom: 10px; text-align: center;">Fale Conosco</h2>
+
+        <p style="line-height: 1.6; color: #ccc; margin-bottom: 30px; text-align: center; font-size: 1.1rem;">
+            Precisando de auxílio jurídico? Entre em contato e agende uma consulta estratégica.
+        </p>
+
+        <div class="contato-profissionais">
+            <div class="contato-profissional">
+                <h3 class="nome-profissional">Helena Tricheis Alexandrino</h3>
+                <div class="contato-item">
+                    <strong>Telefone:</strong><br>
+                    (48) 99807-5387
+                </div>
+                <div class="contato-item">
+                    <strong>E-mail:</strong><br>
+                    helena@soaresetricheis.com.br
+                </div>
+            </div>
+
+            <div class="contato-profissional">
+                <h3 class="nome-profissional">Tiago da Silva Soares</h3>
+                <div class="contato-item">
+                    <strong>Telefone:</strong><br>
+                    (48) 99903-4556
+                </div>
+                <div class="contato-item">
+                    <strong>E-mail:</strong><br>
+                    tiago@soaresetricheis.com.br
+                </div>
+            </div>
+        </div>
+
+        <form class="form-contato" style="margin-top: 50px;">
+            <h3 style="color: #d4af37; margin-bottom: 20px; text-align: center;">Envie sua Mensagem</h3>
+
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" name="assunto">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer class="rodape">
+        <p>Nosso site utiliza cookies para melhorar a navegação.
+            <a href="politica-privacidade.html">Política de Privacidade</a> |
+            <a href="politica-cookies.html">Política de Cookies</a>
+        </p>
+    </footer>
+</body>
+</html>

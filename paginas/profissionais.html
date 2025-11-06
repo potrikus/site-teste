@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissionais | Soares & Tricheis Advogados</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Estilos específicos para a página de profissionais */
+        .conteudo-pagina {
+            padding: 120px 80px;
+            min-height: 80vh;
+        }
+
+        .titulo-pagina {
+            color: #d4af37;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .descricao-equipe {
+            line-height: 1.6;
+            color: #ccc;
+            margin-bottom: 40px;
+            max-width: 800px;
+        }
+
+        .equipe {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .membro {
+            flex: 1 1 300px;
+            max-width: 350px;
+            padding: 30px 20px;
+            background-color: #0a0a0a;
+            border-radius: 8px;
+            border: 1px solid #1a1a1a;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .membro:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            border-color: #d4af37;
+        }
+
+        .membro::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #d4af37, #b8941f);
+        }
+
+        .foto-membro {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d4af37;
+            font-size: 2rem;
+            border: 3px solid #d4af37;
+        }
+
+        .nome-membro {
+            color: #d4af37;
+            margin-bottom: 5px;
+            font-size: 1.3rem;
+        }
+
+        .cargo-membro {
+            color: #ccc;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .oab-info {
+            background-color: #1a1a1a;
+            padding: 8px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+            color: #d4af37;
+        }
+
+        .especialidades {
+            font-size: 0.9rem;
+            margin-top: 10px;
+            color: #aaa;
+            line-height: 1.5;
+        }
+
+        .formacao {
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: #bbb;
+            line-height: 1.5;
+        }
+
+        .cargos-comissoes {
+            margin-top: 15px;
+            font-size: 0.85rem;
+            color: #bbb;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .conteudo-pagina {
+                padding: 100px 20px;
+            }
+
+            .membro {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="topo">
+        <div class="logo">
+            <img src="../logo.png" alt="Logo Soares & Tricheis Advogados">
+        </div>
+        <nav class="menu">
+            <a href="../index.html">Home</a>
+            <a href="quem-somos.html">Quem Somos</a>
+            <a href="profissionais.html">Profissionais</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="fale-conosco.html">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <section class="conteudo-pagina">
+        <h2 class="titulo-pagina">Nossos Profissionais</h2>
+
+        <p class="descricao-equipe">Conheça a equipe de advogados do Soares & Tricheis. Somos especialistas em diversas áreas do Direito, prontos para oferecer a melhor assistência jurídica personalizada.</p>
+
+        <div class="equipe">
+            <div class="membro">
+                <div class="foto-membro">HT</div>
+                <h3 class="nome-membro">Helena Tricheis Alexandrino</h3>
+                <p class="cargo-membro">Advogada</p>
+                <div class="oab-info">OAB/SC nº 63.897</div>
+                <p class="especialidades"><strong>Atua especialmente com:</strong><br>Direito das Famílias e Direito Criminal</p>
+                <div class="formacao">
+                    <strong>Formação:</strong><br>
+                    Graduada pela Universidade do Extremo Sul Catarinense (UNESC) em 2021.<br>
+                    Pós-graduada em Direito Processual Penal pelo Instituto Damásio Educacional.
+                </div>
+                <div class="cargos-comissoes">
+                    <strong>Atuação Profissional:</strong><br>
+                    Presidente da Comissão da Jovem Advocacia da OAB Subseção de Criciúma (2025/2027).<br>
+                    Membro da Comissão de Família e Sucessões da OAB Subseção de Criciúma.
+                </div>
+            </div>
+
+            <div class="membro">
+                <div class="foto-membro">TS</div>
+                <h3 class="nome-membro">Tiago da Silva Soares</h3>
+                <p class="cargo-membro">Advogado</p>
+                <div class="oab-info">OAB/SC nº 75.656</div>
+                <p class="especialidades"><strong>Atua especialmente com:</strong><br>Contratos, Direito Imobiliário e Direito Previdenciário</p>
+                <div class="formacao">
+                    <strong>Formação:</strong><br>
+                    Graduado pela Universidade do Extremo Sul Catarinense (UNESC) em 2014.<br>
+                    Mestrado em Desenvolvimento Socioeconômico pela Universidade do Extremo Sul Catarinense (UNESC).
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>Nosso site utiliza cookies para melhorar a navegação.
+            <a href="politica-privacidade.html">Política de Privacidade</a> |
+            <a href="politica-cookies.html">Política de Cookies</a>
+        </p>
+    </footer>
+</body>
+</html>
